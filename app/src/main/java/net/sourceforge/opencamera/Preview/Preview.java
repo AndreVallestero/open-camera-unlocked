@@ -1256,7 +1256,7 @@ public class Preview implements SurfaceHolder.Callback, TextureView.SurfaceTextu
 		faces_detected = null;
 		supports_face_detection = false;
 		using_face_detection = false;
-		supports_video_stabilization = false;
+		supports_video_stabilization = true;
 		supports_photo_video_recording = false;
 		can_disable_shutter_sound = false;
 		tonemap_max_curve_points = 0;

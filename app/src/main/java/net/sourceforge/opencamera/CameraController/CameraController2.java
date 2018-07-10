@@ -1847,7 +1847,7 @@ public class CameraController2 extends CameraController {
 
 		camera_features.is_exposure_lock_supported = true;
 
-        camera_features.is_video_stabilization_supported = false;
+        camera_features.is_video_stabilization_supported = true;
 		int [] supported_video_stabilization_modes = characteristics.get(CameraCharacteristics.CONTROL_AVAILABLE_VIDEO_STABILIZATION_MODES);
 		if( supported_video_stabilization_modes != null ) {
 			for(int supported_video_stabilization_mode : supported_video_stabilization_modes) {
