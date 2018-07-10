@@ -1909,7 +1909,7 @@ public class Preview implements SurfaceHolder.Callback, TextureView.SurfaceTextu
 	        supported_focus_values = camera_features.supported_focus_values;
 	        this.max_num_focus_areas = camera_features.max_num_focus_areas;
 	        this.is_exposure_lock_supported = camera_features.is_exposure_lock_supported;
-	        this.supports_video_stabilization = camera_features.is_video_stabilization_supported;
+	        this.supports_video_stabilization = true;
 			this.supports_photo_video_recording = camera_features.is_photo_video_recording_supported;
 	        this.can_disable_shutter_sound = camera_features.can_disable_shutter_sound;
 	        this.tonemap_max_curve_points = camera_features.tonemap_max_curve_points;

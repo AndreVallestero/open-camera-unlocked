@@ -198,9 +198,7 @@ public class MainActivity extends Activity implements AudioListener.AudioListene
 			Log.d(TAG, "large max memory = " + activityManager.getLargeMemoryClass() + "MB");
 		}
 		large_heap_memory = activityManager.getLargeMemoryClass();
-		if( large_heap_memory >= 128 ) {
-			supports_auto_stabilise = true;
-		}
+		supports_auto_stabilise = true;
 		if( MyDebug.LOG )
 			Log.d(TAG, "supports_auto_stabilise? " + supports_auto_stabilise);
 

@@ -84,11 +84,7 @@ public class CameraControllerManager2 extends CameraControllerManager {
 					break;
 			}
 		}
-		if (deviceLevel == CameraCharacteristics.INFO_SUPPORTED_HARDWARE_LEVEL_LEGACY) {
-			return requiredLevel == deviceLevel;
-		}
-		// deviceLevel is not LEGACY, can use numerical sort
-		return requiredLevel <= deviceLevel;
+		return true;
 	}
 
 	/* Rather than allowing Camera2 API on all Android 5+ devices, we restrict it to cases where all cameras have at least LIMITED support.

@@ -412,7 +412,7 @@ public class MyPreferenceFragment extends PreferenceFragment implements OnShared
         	pg.removePreference(pref);
 		}
 		
-		final boolean supports_video_stabilization = bundle.getBoolean("supports_video_stabilization");
+		final boolean supports_video_stabilization = true;
 		if( MyDebug.LOG )
 			Log.d(TAG, "supports_video_stabilization: " + supports_video_stabilization);
 		if( !supports_video_stabilization ) {
